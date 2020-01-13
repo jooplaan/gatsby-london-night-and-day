@@ -447,6 +447,9 @@ body {
   background: rgba(0, 0, 0, 0.1);
   opacity: 1;
   transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
+  @include light-mode {
+    	color: $color-base-light;
+  }
 }
 
 .post-card-date,
@@ -519,6 +522,10 @@ body {
   line-height: 1.15em;
   text-align: left;
   color: $color-base;
+  @include light-mode {
+    color: $color-base-light;
+  }
+
 }
 
 .post-card.no-image:hover .post-card-title {

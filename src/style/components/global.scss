@@ -340,9 +340,12 @@ blockquote cite a {
 }
 
 a {
-    color: color($color-primary l(-5%));
+    color: $link-color;
     text-decoration: none;
     transition: 0.4s ease;
+    @include light-mode {
+    	color: $link-color-light;
+  }
 }
 
 a:hover {
