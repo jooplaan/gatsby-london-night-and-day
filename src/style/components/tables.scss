@@ -9,7 +9,7 @@ table {
 }
 
 th {
-    color: $color-base;
+    color: $color-body-font;
     font-size: 0.9em;
     font-weight: $font-bold;
     padding: 0 0.7em 0.4em 0.7em;
@@ -37,7 +37,7 @@ tbody tr:first-child td {
 }
 
 tbody tr:nth-child(2n + 1) {
-    background-color: $color-bg;
+    // background-color: $color-bg;
 }
 
 tbody td {

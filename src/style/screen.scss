@@ -30,7 +30,7 @@ body {
   transition-delay: 0.25;
   @include light-mode {
     background: $color-bg-light;
-    color: $color-base-light;
+    color: $color-base-light-inverted;
   }
 }
 
@@ -101,9 +101,9 @@ body {
 .page-head-title {
   margin: 0;
   font-size: 4.2rem;
-  color: $color-base;
+  color: $color-body-font;
   @include light-mode {
-    color: $color-base-light;
+    color: $color-body-font-light;
   }
 }
 @media (max-width: 500px) {
@@ -133,7 +133,10 @@ body {
 }
 
 .site-foot a {
-  color: $color-base;
+  color: $color-body-font;
+  @include light-mode {
+    color: $color-body-font-light;
+  }
 }
 
 /* Site Navigation
@@ -204,14 +207,14 @@ body {
   flex-shrink: 0;
   display: block;
   padding: 10px;
-  color: $color-base;
+  color: $color-body-font;
   font-size: 2.1rem;
   line-height: 1em;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   @include light-mode {
-    color: $color-base-light;
+    color: $color-body-font-light;
   }
 }
 
@@ -448,7 +451,7 @@ body {
   opacity: 1;
   transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
   @include light-mode {
-    	color: $color-base-light;
+      color: $color-base-light;
   }
 }
 
@@ -629,9 +632,9 @@ body {
 .post-content-body h4,
 .post-content-body h5,
 .post-content-body h6 {
-  color: $color-base;
+  color: $color-body-font;
   @include light-mode {
-    color: $color-base-light;
+    color: $color-body-font-light;
   }
 }
 
@@ -685,15 +688,15 @@ body {
   margin: 1.5em 0 3em;
   padding: 20px;
   max-width: 100%;
-  /* border: color($color-base l(-10%)) 1px solid; */
-  border: color(var($color-bg-bright) l(-0%)) 1px solid !important;
-  /* color: $color-bg; */
-  color: $color-base;
+  border: $color-bg-bright 1px solid !important;
+  color: $color-body-font;
   font-size: 1.4rem;
   line-height: 1.5em;
-  /* background: color($color-base l(-3%)); */
-  background: var($color-bg-dark) !important;
+  background: $color-bg-dark !important;
   border-radius: 5px;
+  // @include light-mode {
+  //   color: $color-body-font-light;
+  // }
 }
 
 .post-content-body pre code {
@@ -724,9 +727,13 @@ body {
   margin-left: -10px;
   width: 1px;
   height: 30px;
-  background: color($color-border l(+10%));
-  box-shadow: #fff 0 0 0 5px;
+  background: $color-body-font;
+  box-shadow: $color-body-font 0 0 5px;
   transform: rotate(45deg);
+  @include light-mode {
+    background: $color-body-font-light;
+    box-shadow: $color-body-font-light 0 0 0 5px;
+  }
 }
 
 .footnotes-sep {
@@ -808,7 +815,7 @@ body {
   flex: 1 1 auto;
   margin: 0.7vw;
   padding: 0.5vw;
-  background-color: var($color-bg-bright);
+  background-color: $color-bg-bright;
   color: $color-sub-base;
   font-size: 2rem;
   line-height: 1em;

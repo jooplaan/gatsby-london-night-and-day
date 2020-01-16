@@ -22,9 +22,12 @@
     font-size: 1.3rem;
     line-height: 1.4em;
     font-weight: 600;
-    color: $color-base;
+    color: $color-body-font;
     text-align: center;
-    opacity: 0.4;
+    opacity: 0.8;
+    @include light-mode {
+      color: $color-body-font-light;
+    }
 }
 
 .kg-width-wide {
