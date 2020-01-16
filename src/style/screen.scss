@@ -446,13 +446,11 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  color: $color-base;
+  color: #B0B0B0;
   background: rgba(0, 0, 0, 0.1);
   opacity: 1;
   transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
-  @include light-mode {
-      color: $color-base-light;
-  }
+
 }
 
 .post-card-date,
