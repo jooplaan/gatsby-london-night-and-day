@@ -186,7 +186,7 @@ body {
   font-weight: 600;
   opacity: 0.6;
   @include light-mode {
-    color: $color-body-font-light;
+    // color: $color-body-font-light;
   }
 }
 
@@ -446,11 +446,13 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  color: #B0B0B0;
+  color: $color-body-font;
   background: rgba(0, 0, 0, 0.1);
   opacity: 1;
   transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
-
+  @include light-mode {
+    color: $color-body-font-light;
+  }
 }
 
 .post-card-date,
@@ -504,11 +506,15 @@ body {
   position: absolute;
   bottom: -0.15em;
   right: 5vw;
-  font-size: 28vw;
+  font-size: 22vw;
   line-height: 1em;
-  font-weight: $font-heavy;
+  font-weight: $color-body-font;
   letter-spacing: -0.1em;
+  font-family: $font-serif;
   color: rgba(0, 0, 0, 0.2);
+  @include light-mode {
+    color: $color-body-font-light;
+  }
 }
 
 .post-card.no-image .post-card-content {
@@ -522,9 +528,9 @@ body {
   font-size: 5rem;
   line-height: 1.15em;
   text-align: left;
-  color: $color-base;
+  color: $color-body-font;
   @include light-mode {
-    color: $color-base-light;
+    color: $color-body-font-light;
   }
 
 }
@@ -586,17 +592,23 @@ body {
 
 .post-content-title {
   margin: 0 0 3vw;
-  color: $color-base;
+  color: $color-body-font;
   text-align: center;
+  @include light-mode {
+    color: $color-body-font-light;
+  }
 }
 
 .post-content-excerpt {
   margin: -2vw 0 3vw;
   font-size: 2.2rem;
   line-height: 1.6em;
-  color: $color-base;
+  color: $color-body-font;
   text-align: center;
   opacity: 0.5;
+  @include light-mode {
+    color: $color-body-font-light;
+  }
 }
 @media (max-width: 500px) {
   .post-content-excerpt {

@@ -13,9 +13,9 @@
     background-color: transparent;
     cursor: pointer;
     transition: opacity 0.15s linear, filter 0.15s linear;
-    @include light-mode {
-      color: $color-body-font-light;
-    }
+    // @include light-mode {
+    //   color: $color-body-font-light-2;
+    // }
 }
 
 .hamburger-box {
@@ -37,9 +37,12 @@
     position: absolute;
     width: 20px;
     height: 1px;
-    background-color: $color-border;
+    background-color: $color-body-font;
     border-radius: 4px;
     transition: transform 0.15s ease;
+    @include light-mode {
+      background-color: $color-body-font-light;
+    }
 }
 .hamburger-inner::before,
 .hamburger-inner::after {
@@ -66,7 +69,7 @@
 .hamburger--collapse .hamburger-inner::after {
     top: -12px;
     transition: top 0.3s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
-    opacity 0.1s linear;
+    // opacity 0.1s linear;
 }
 .hamburger--collapse .hamburger-inner::before {
     transition: top 0.12s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
@@ -76,7 +79,12 @@
 .site-head-open .hamburger-inner,
 .site-head-open .hamburger-inner::before,
 .site-head-open .hamburger-inner::after {
-    background-color: $color-base;
+    background-color: $color-body-font;
+    color: $color-body-font;
+    // @include light-mode {
+    //   background-color: $color-body-font-light-2;
+    //   color: $color-body-font-light;
+    // }
 }
 
 .site-head-open .hamburger-inner {
@@ -89,7 +97,7 @@
     top: 0;
     opacity: 0;
     transition: top 0.3s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
-    opacity 0.1s 0.27s linear;
+    // opacity 0.1s 0.27s linear;
 }
 .site-head-open .hamburger-inner::before {
     top: 0;
