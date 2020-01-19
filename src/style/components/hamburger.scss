@@ -81,10 +81,10 @@
 .site-head-open .hamburger-inner::after {
     background-color: $color-body-font;
     color: $color-body-font;
-    // @include light-mode {
-    //   background-color: $color-body-font-light-2;
-    //   color: $color-body-font-light;
-    // }
+    @include light-mode {
+      background-color: $color-body-font-light-2;
+      color: $color-body-font-light;
+    }
 }
 
 .site-head-open .hamburger-inner {

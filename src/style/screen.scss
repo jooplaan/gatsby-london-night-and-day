@@ -314,11 +314,8 @@ body {
     padding: 1px 0;
     font-size: 2.6rem;
     line-height: 1.15em;
-    font-weight: 200;
+    font-weight: 300;
     opacity: 0;
-    transition: transform 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99),
-      opacity 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-    transform: scale(1.1) translateY(-25px);
   }
   .site-head-right a {
     padding: 5px 0;
@@ -355,12 +352,14 @@ body {
   }
 
   .site-head-open {
-    /* background: rgba(255,255,255,1); */
     background: $color-bg;
     transition: background 0.5s ease-out;
     transition-delay: 0.25;
     overflow: hidden;
     height: 100vh;
+    @include light-mode {
+      background: $color-bg-light;
+    }
   }
 
   .site-head-open .site-head-container {
@@ -384,9 +383,12 @@ body {
   }
   .site-head-open .nav-current a {
     border-bottom: $color-base 2px solid;
+    @include light-mode {
+      border-bottom: $color-base-light 2px solid;
+    }
   }
   .site-head-open .site-head-right a {
-    opacity: 0.5;
+    opacity: 0.8;
   }
   .site-head-open .site-foot {
     display: block;
