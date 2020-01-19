@@ -21,7 +21,7 @@ const Layout = props => {
             >
               <div className="hamburger-box">
                 <div className="hamburger-inner" />
-              </div>
+              </div> <div className="hamburger-text-menu-text">Menu</div>
             </div>
           </a>
           <nav id="swup" className="site-head-left">

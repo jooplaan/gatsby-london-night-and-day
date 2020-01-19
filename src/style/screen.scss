@@ -213,6 +213,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   @include light-mode {
     color: $color-body-font-light;
   }
@@ -339,7 +341,8 @@ body {
     position: static;
     z-index: auto;
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    width: 186px;
   }
   .site-head-right {
     order: 3;
