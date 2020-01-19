@@ -17,6 +17,9 @@ label {
     font-size: 0.9em;
     font-weight: $font-bold;
     margin: 0 0 ($margin * 0.5) 0;
+    @include light-mode {
+      color: $color-primary-light;
+    }
 }
 
 input[type="text"],
@@ -37,6 +40,10 @@ textarea {
     padding: 0 0.6em;
     text-decoration: none;
     width: 100%;
+    @include light-mode {
+      border: solid 1px $color-border-light;
+      background: $color-bg-light;
+    }
 }
 
 input[type="text"]:invalid,
@@ -60,6 +67,10 @@ select:focus,
 textarea:focus {
     border-color: $color-primary;
     box-shadow: 0 0 0 1px $color-primary;
+    @include light-mode {
+      border-color: $color-primary-light;
+      box-shadow: 0 0 0 1px $color-primary-light;
+    }
 }
 
 select {
@@ -71,6 +82,10 @@ select {
 select option {
     color: $color-primary;
     background: $color-bg;
+    @include light-mode {
+      color: $color-primary-light;
+      background: $color-bg-light;
+    }
 }
 
 select:focus::-ms-value {
@@ -135,6 +150,10 @@ input[type="radio"] + label:before {
     text-align: center;
     width: calc(#{$height} * 0.6);
     margin-right: 1rem;
+    @include light-mode {
+      background: $color-bg-light;
+      border: solid 1px $color-border-light;
+    }
 }
 
 input[type="checkbox"]:checked + label:before,
@@ -143,12 +162,21 @@ input[type="radio"]:checked + label:before {
     border-color: $color-primary;
     color: $color-bg;
     content: '✓';
+    @include light-mode {
+      background: $color-primary-light;
+      border-color: $color-primary-light;
+      color: $color-bg-light;
+    }
 }
 
 input[type="checkbox"]:focus + label:before,
 input[type="radio"]:focus + label:before {
     border-color: $color-primary;
     box-shadow: 0 0 0 1px $color-primary;
+    @include light-mode {
+      border-color: $color-primary-light;
+      box-shadow: 0 0 0 1px $color-primary-light;
+    }
 }
 
 

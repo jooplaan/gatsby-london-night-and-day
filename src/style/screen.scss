@@ -128,7 +128,7 @@ body {
 .site-foot {
   margin: 3vw 0 1vw;
   text-align: center;
-  color: color($color-border l(-20%));
+  color: color(#{$color-border} l(-20%));
   font-size: 1.4rem;
 }
 
@@ -186,7 +186,7 @@ body {
   font-weight: 600;
   opacity: 0.6;
   @include light-mode {
-    // color: $color-body-font-light;
+    color: $color-body-font-light;
   }
 }
 
@@ -450,9 +450,6 @@ body {
   background: rgba(0, 0, 0, 0.1);
   opacity: 1;
   transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
-  @include light-mode {
-    color: $color-body-font-light;
-  }
 }
 
 .post-card-date,
@@ -512,9 +509,6 @@ body {
   letter-spacing: -0.1em;
   font-family: $font-serif;
   color: rgba(0, 0, 0, 0.2);
-  @include light-mode {
-    color: $color-body-font-light;
-  }
 }
 
 .post-card.no-image .post-card-content {
@@ -529,10 +523,6 @@ body {
   line-height: 1.15em;
   text-align: left;
   color: $color-body-font;
-  @include light-mode {
-    color: $color-body-font-light;
-  }
-
 }
 
 .post-card.no-image:hover .post-card-title {
@@ -605,7 +595,7 @@ body {
   line-height: 1.6em;
   color: $color-body-font;
   text-align: center;
-  opacity: 0.5;
+  opacity: 0.7;
   @include light-mode {
     color: $color-body-font-light;
   }
@@ -742,7 +732,7 @@ body {
   transform: rotate(45deg);
   @include light-mode {
     background: $color-body-font-light;
-    box-shadow: $color-body-font-light 0 0 0 5px;
+    box-shadow: $color-body-font-light 0 0 5px;
   }
 }
 
@@ -830,12 +820,20 @@ body {
   font-size: 2rem;
   line-height: 1em;
   white-space: nowrap;
+  @include light-mode {
+    background-color: $color-bg-bright-light;
+    color: $color-sub-base-light;
+  }
 }
 
 .tag-item:hover {
-  color: var($color-bg-bright);
+  color: $color-bg-bright;
   background-color: $color-sub-base;
   transition: all 0.4s ease-out;
+  @include light-mode {
+    color: $color-bg-bright-light;
+    background-color: $color-sub-base-light;
+  }
 }
 
 @media (max-width: 700px) {

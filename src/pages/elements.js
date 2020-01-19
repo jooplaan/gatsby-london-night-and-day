@@ -378,143 +378,71 @@ const ElementsPage = ({ data }, location) => {
           </pre>
           <h2 id="grid-system">Grid system</h2>
           <div className="row">
-            <div className="col-12">
-              <div
-                style={{
-                  padding: "1rem 0",
-                  textAlign: "center",
-                  background: "#1d1d1f",
-                }}
-              >
+            <div className="col-demo col-12">
+              <div>
                 12
               </div>
             </div>
           </div>
           <div className="row">
-            <div className="col-3">
-              <div
-                style={{
-                  padding: "1rem 0",
-                  textAlign: "center",
-                  background: "#1d1d1f",
-                }}
-              >
+            <div className="col-demo col-3">
+              <div>
                 3
               </div>
             </div>
-            <div className="col-9">
-              <div
-                style={{
-                  padding: "1rem 0",
-                  textAlign: "center",
-                  background: "#1d1d1f",
-                }}
-              >
+            <div className="col-demo col-9">
+              <div>
                 9
               </div>
             </div>
           </div>
           <div className="row">
-            <div className="col-6">
-              <div
-                style={{
-                  padding: "1rem 0",
-                  textAlign: "center",
-                  background: "#1d1d1f",
-                }}
-              >
+            <div className="col-demo col-6">
+              <div>
                 6
               </div>
             </div>
-            <div className="col-6">
-              <div
-                style={{
-                  padding: "1rem 0",
-                  textAlign: "center",
-                  background: "#1d1d1f",
-                }}
-              >
+            <div className="col-demo col-6">
+              <div>
                 6
               </div>
             </div>
           </div>
           <div className="row">
-            <div className="col">
-              <div
-                style={{
-                  padding: "1rem 0",
-                  textAlign: "center",
-                  background: "#1d1d1f",
-                }}
-              >
+            <div className="col-demo col">
+              <div>
                 auto
               </div>
             </div>
-            <div className="col">
-              <div
-                style={{
-                  padding: "1rem 0",
-                  textAlign: "center",
-                  background: "#1d1d1f",
-                }}
-              >
+            <div className="col-demo col">
+              <div>
                 auto
               </div>
             </div>
-            <div className="col">
-              <div
-                style={{
-                  padding: "1rem 0",
-                  textAlign: "center",
-                  background: "#1d1d1f",
-                }}
-              >
+            <div className="col-demo col">
+              <div>
                 auto
               </div>
             </div>
           </div>
           <div className="row">
-            <div className="col">
-              <div
-                style={{
-                  padding: "1rem 0",
-                  textAlign: "center",
-                  background: "#1d1d1f",
-                }}
-              >
+            <div className="col-demo col">
+              <div>
                 auto
               </div>
             </div>
-            <div className="col">
-              <div
-                style={{
-                  padding: "1rem 0",
-                  textAlign: "center",
-                  background: "#1d1d1f",
-                }}
-              >
+            <div className="col-demo col">
+              <div>
                 auto
               </div>
             </div>
-            <div className="col">
-              <div
-                style={{
-                  padding: "1rem 0",
-                  textAlign: "center",
-                  background: "#1d1d1f",
-                }}
-              >
+            <div className="col-demo col">
+              <div>
                 auto
               </div>
             </div>
-            <div className="col">
-              <div
-                style={{
-                  padding: "1rem 0",
-                  textAlign: "center",
-                  background: "#1d1d1f",
-                }}
-              >
+            <div className="col-demo col">
+              <div>
                 auto
               </div>
             </div>

@@ -78,6 +78,10 @@ button,
     color: $color-primary !important;
     background-color: transparent;
     box-shadow: inset 0 0 0 2px $color-primary;
+    @include light-mode {
+      color: $color-primary-light !important;
+      box-shadow: inset 0 0 0 2px $color-primary-light;
+    }
 }
 
 input[type="submit"]:hover,
@@ -86,9 +90,13 @@ input[type="button"]:hover,
 button:hover,
 .button:hover {
     text-decoration: none;
-    color: color($color-primary l(-15%)) !important;
-    box-shadow: inset 0 0 0 2px color($color-primary l(-10%));
+    color: color(#{$color-primary} l(-15%)) !important;
+    box-shadow: inset 0 0 0 2px color(#{$color-primary} l(-10%));
     transition: 0.2s ease;
+    @include light-mode {
+      color: color(#{$color-primary-light} l(-15%)) !important;
+      box-shadow: inset 0 0 0 2px color(#{$color-primary-light} l(-10%));
+    }
 }
 
 input[type="submit"].primary,
@@ -100,6 +108,10 @@ button.primary,
     color: $color-base !important;
     background-color: $color-primary;
     box-shadow: none;
+    @include light-mode {
+      color: $color-base-light !important;
+      background-color: $color-primary-light;
+    }
 }
 
 input[type="submit"].primary:hover,
@@ -107,5 +119,8 @@ input[type="reset"].primary:hover,
 input[type="button"].primary:hover,
 button.primary:hover,
 .button.primary:hover {
-        background-color: color($color-primary l(-10%));
+    background-color: color(#{$color-primary} l(-10%));
+    @include light-mode {
+      background-color: color(#{$color-primary-light} l(-10%));
     }
+ }

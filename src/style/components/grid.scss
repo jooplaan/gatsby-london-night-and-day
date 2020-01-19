@@ -91,6 +91,16 @@
     max-width: 100%;
 }
 
+.col-demo {
+  padding: 1rem 0;
+  text-align: center;
+  background: #1d1d1f;
+  border: 1px inset #000;
+  @include light-mode {
+    background: #ccc;
+  }
+}
+
 @media (max-width: 800px) {
     .col-1,
     .col-2,

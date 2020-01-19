@@ -293,6 +293,9 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid $color-border;
+    @include light-mode {
+      border: solid 1px $color-border-light;
+    }
 }
 
 audio,

@@ -14,6 +14,9 @@ th {
     font-weight: $font-bold;
     padding: 0 0.7em 0.4em 0.7em;
     text-align: left;
+    @include light-mode {
+      color: $color-body-font-light;
+    }
 }
 
 td {
@@ -30,6 +33,9 @@ tbody tr {
     border: solid 1px $color-border;
     border-left: 0;
     border-right: 0;
+    @include light-mode {
+      border: solid 1px $color-border-light;
+    }
 }
 
 tbody tr:first-child td {
@@ -44,6 +50,9 @@ tbody td {
     border: solid 1px $color-border;
     border-left-width: 0;
     border-top-width: 0;
+    @include light-mode {
+      border: solid 1px $color-border-light;
+    }
 }
 
 tfoot {
