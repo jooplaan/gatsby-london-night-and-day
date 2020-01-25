@@ -18,8 +18,8 @@ A custom, image-centric theme for Gatsby. Made for publishers and portfolios wit
 ---
 
 ### What is different from London After Midnight?
-* Removed Google Fonts, using system fonts in stead (for speed and privacy :)
 * Using the London After Midnight is now “Dark mode” (the default), and the original London as “Light mode”. Both work in progress
+* Removed Google Fonts, using system fonts in stead (for speed and privacy :)
 * Use [Sass](https://sass-lang.com/) in stead of plain CSS. Work in progress
 
 ---
