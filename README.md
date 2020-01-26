@@ -12,7 +12,7 @@
 
 ---
 
-A custom, image-centric theme for Gatsby. Made for publishers and portfolios with plenty of graphics to show off to the world. Completely free and fully responsive, released under the MIT license.
+A custom, image-centric theme for Gatsby. Made for publishers and portfolios with plenty of graphics to show off to the world. Fully responsive, with light and dark mode, released under the MIT license.
 
 **Based on [London After Midnight](https://github.com/vaporwavy/gatsby-london-after-midnight) for Gatsby** which is based on [London](https://github.com/ImedAdel/gatsby-london) for Gatsby.
 
