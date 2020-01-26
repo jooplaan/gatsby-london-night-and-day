@@ -8,7 +8,8 @@
   London Night and Day
 </h1>
 
-<p class="center">[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/jooplaan/gatsby-london-night-and-day)</p>
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/jooplaan/gatsby-london-night-and-day)
+
 ---
 
 A custom, image-centric theme for Gatsby. Made for publishers and portfolios with plenty of graphics to show off to the world. Fully responsive, with light and dark mode, released under the MIT license.
