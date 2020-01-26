@@ -1,5 +1,5 @@
 [build]
-  command = "yarn run build"
+  command = "gatsby build"
   publish = "public"
 
 [build.environment]
