@@ -32,11 +32,11 @@ _First time with Gatsby? Take a look on the [official and community-created star
 
 1.  **Create a Gatsby site.**
 
-    Use `npx` and the Gatsby CLI to create a new project
+    Use the Gatsby CLI to create a new project
 
     ```sh
     # create a new Gatsby site using the blog starter
-    npx gatsby new my-awesome-portfolio https://github.com/jooplaan/gatsby-london-night-and-day
+    gatsby new my-awesome-portfolio https://github.com/jooplaan/gatsby-london-night-and-day
     ```
 
 1.  **Start developing.**
